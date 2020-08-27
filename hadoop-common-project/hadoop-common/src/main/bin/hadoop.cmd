@@ -171,7 +171,7 @@ call :updatepath %HADOOP_BIN_PATH%
   )
   set HADOOP_OPTS=%HADOOP_OPTS% -Dhadoop.security.logger=%HADOOP_SECURITY_LOGGER%
 
-  call %JAVA% %JAVA_HEAP_MAX% %HADOOP_OPTS% -classpath %CLASSPATH% %CLASS% %hadoop-command-arguments%
+  call "%JAVA%" %JAVA_HEAP_MAX% %HADOOP_OPTS% -classpath %CLASSPATH% %CLASS% %hadoop-command-arguments%
 
   exit /b %ERRORLEVEL%
 
